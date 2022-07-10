@@ -1,0 +1,18 @@
+.p-top{
+    position: relative;
+    width: 100%;
+
+    &__inner{
+        background-image: url(/assets/images/top/stock-photo-cropped-view-businessman-shaking-hands.jpeg);
+        background-size: cover;
+        height: 100vh;
+    }
+    &__titleBox{
+        position: relative;
+        top: 50vh;
+        left: 10vh;
+        color: #fff;
+    }
+
+
+}
