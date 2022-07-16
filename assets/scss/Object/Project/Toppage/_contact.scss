@@ -110,11 +110,9 @@
     &__list{
         &:not(:first-child){
             margin-left: 20px;
+            max-width: 100000px;
         }
     }
-    
-
-
     
 
 }
