@@ -1,0 +1,34 @@
+@use "../../../Foundation/mixin";
+.p-news{
+    &__inner{
+        width: 100%;
+        padding-top: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__list{
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__img{
+        width: 60%;
+    }
+    &__btn{
+        padding-top: 100PX;
+    }
+    &__date{
+        margin-top: 20px;
+    }
+    &__text{
+        margin-top: 20px;
+    }
+}

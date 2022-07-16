@@ -1,0 +1,116 @@
+@use "../../../Foundation/mixin";
+.p-contact{
+    &__inner{
+        margin: 0 auto;
+        position: relative;
+        padding-top: 100px;
+        width: 100%;
+    }
+    &__top{
+        width: 100%;
+        margin:0  auto;
+        padding: 50px 0;
+        margin: auto;
+        text-align: center;
+        background-color: mixin.$color-gray;
+        z-index: 5;
+        border-radius: 10px;
+    }
+
+    &__title{
+        font-size: 80px;
+        font-weight: 600;
+        color:black
+    }
+    &__subtitle{
+        &:nth-child(3){
+            margin-top: 50px;
+        }
+       
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+        position: relative;
+    }
+    &__wrap{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &:nth-child(1)::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background-color: black;
+        }
+        &:nth-child(2){
+            padding-bottom: 20px;
+        }
+        .c-btn__wrap{
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 0;
+            padding: 0;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    &__text{
+        font-size: 32px;
+        color: mixin.$color-main;
+        margin-top: 20px;
+    }
+    &__link{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+        height: 100%;
+    }
+    &__icon{
+        width: 20%;
+
+    }
+    &__bottom{
+        position: relative;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        vertical-align: bottom;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    &__copyright{
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        color: #fff;
+        font-size: 12px;
+        z-index: 10;
+        margin-top: 20px;
+    }
+    &__lists{
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        color: #fff;
+        z-index: 10;
+        height: 80%;
+    }
+    &__list{
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+@use "../../../Foundation/mixin";
+.p-footer{
+    &__inner{
+        margin: 0 auto;
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: black;
+    }
+
+
+   
+    &__text{
+        font-size: 32px;
+        color: mixin.$color-main;
+        margin-top: 20px;
+    }
+    &__link{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+        height: 100%;
+    }
+    &__icon{
+        width: 20%;
+
+    }
+    &__bottom{
+        position: relative;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        vertical-align: bottom;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    &__copyright{
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        color: #fff;
+        font-size: 12px;
+        z-index: 10;
+        margin-top: 50px;
+    }
+    &__lists{
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        color: #fff;
+        z-index: 10;
+        height: 50%;
+    }
+    &__list{
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+
+}
