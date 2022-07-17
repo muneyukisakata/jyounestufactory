@@ -749,7 +749,7 @@ select {
   color: black;
 }
 .p-contact__subtitle:nth-child(3) {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .p-contact__container {
   display: -webkit-box;
