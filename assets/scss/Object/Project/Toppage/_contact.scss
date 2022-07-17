@@ -5,7 +5,6 @@
         position: relative;
         padding-top: 100px;
         width: 100%;
-        
     }
     &__top{
         width: 100%;
@@ -16,6 +15,7 @@
         background-color: mixin.$color-gray;
         z-index: 5;
         border-radius: 10px;
+
     }
 
     &__title{
