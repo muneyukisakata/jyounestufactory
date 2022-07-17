@@ -962,6 +962,7 @@ select {
 
 body {
   font-size: 20px;
+  color: red;
 }
 
 .fadeUp {
