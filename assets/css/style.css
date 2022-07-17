@@ -960,6 +960,10 @@ select {
   margin-left: 20px;
 }
 
+body {
+  font-size: 20px;
+}
+
 .fadeUp {
   -webkit-animation-name: fadeUpAnime;
           animation-name: fadeUpAnime;
