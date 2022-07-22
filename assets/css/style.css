@@ -152,7 +152,7 @@ select {
 }
 
 .c-mainTitle {
-  font-size: 32px;
+  font-size: 101px;
   text-align: center;
 }
 @media screen and (max-width: 396px) {
@@ -1021,6 +1021,18 @@ select {
   margin-left: 20px;
 }
 
+.p-hero {
+  margin-top: 100px;
+}
+.p-hero__titleBox__title {
+  font-size: 200px;
+}
+
+.p-message__text {
+  background-color: red;
+  font-size: 12px;
+}
+
 .fadeUp {
   -webkit-animation-name: fadeUpAnime;
           animation-name: fadeUpAnime;
@@ -1331,6 +1343,11 @@ Object/Project/toppage
 /*================================================================================
 
 Object/Project/company
+
+================================================================================*/
+/*================================================================================
+
+Object/Project/recruit
 
 ================================================================================*/
 /*================================================================================
