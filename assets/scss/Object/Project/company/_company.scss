@@ -1,0 +1,14 @@
+@use "../../../Foundation/mixin";
+.p-company {
+  &__subTitle {
+    color: $color-main;
+  }
+  &__title {
+    font-weight: bold;
+
+  }
+  &__listItem {
+    display: flex;
+
+  }
+}
