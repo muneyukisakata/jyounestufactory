@@ -7,7 +7,7 @@ Foundation
 ================================================================================*/
 @use "Foundation/base";
 @use "Foundation/fonts";
-@use "Foundation/mixin";
+@use "Foundation/mixin" as m;
 @use "Foundation/ress";
 
 /*================================================================================
@@ -42,6 +42,16 @@ Object/Project/toppage
 @use "Object/Project/Toppage/news";
 @use "Object/Project/Toppage/contact";
 @use "Object/Project/Toppage/footer";
+
+/*================================================================================
+
+Object/Project/company
+
+================================================================================*/
+
+@use "Object/Project/company/company";
+
+
 /*================================================================================
 
 Object/Utility
