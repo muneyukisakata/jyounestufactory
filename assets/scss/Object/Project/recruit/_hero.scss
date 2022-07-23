@@ -1,0 +1,19 @@
+@use "../../../Foundation/mixin" as m;
+.p-hero {
+    display: flex;
+    margin-top: 10%;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: center;
+
+    &__titleBox {
+        max-width: 1500px;
+        width: 100%;
+        padding: 100px 0;
+        border: solid 2px m.$color-gray;
+        text-align: center;
+    }
+    &__title {
+        font-size: 50px;
+    }
+}

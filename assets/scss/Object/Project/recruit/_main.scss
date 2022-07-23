@@ -1,0 +1,9 @@
+@use "../../../Foundation/mixin" as m;
+main {
+    .recruit-wrapper {
+      .l-main {
+        max-width: 1500px;
+         padding: 0 50px;
+      }
+    }
+}
