@@ -5,7 +5,7 @@
         margin: 0 auto;
         position: relative;
         width: 100%;
-        padding-bottom: 100px;
+        padding:0 20px 100px 20px;
     }
     &__backfont{
         position: absolute;
@@ -15,13 +15,19 @@
         left: 0;
         right: 0;
         margin: auto;
+        @include m.mq(tab) {
+            display: none;
+        }
         
     }
     &__textBox{
         text-align: center;
     }
     &__subTitle{
-        font-size: 40px;
+        font-size: 32px;
+        @include m.mq(sp) {
+            font-size: 24px;
+        }
     }
     &__text{
         margin-top: 80px;

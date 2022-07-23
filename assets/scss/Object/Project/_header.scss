@@ -1,4 +1,4 @@
-@use "../../../Foundation/mixin" as m;
+@use "../../Foundation/mixin" as m;
 .p-header{
     &__inner{
         position: fixed;
@@ -21,7 +21,7 @@
     &__logo{
         display: flex;
         justify-content: flex-start;
-        width: 30%;
+        width: 25%;
         @include m.mq(tab) {
             width: 100%;
         }

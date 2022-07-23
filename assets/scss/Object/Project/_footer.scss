@@ -1,9 +1,9 @@
-@use "../../../Foundation/mixin" as m;
+@use "../../Foundation/mixin" as m;
 .p-footer{
     &__inner{
         margin: 0 auto;
         position: relative;
-        height: 300px;
+        height: 200px;
         width: 100%;
         background-color: black;
     }
