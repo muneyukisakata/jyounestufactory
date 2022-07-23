@@ -1087,6 +1087,113 @@ select {
   margin-left: 20px;
 }
 
+main .recruit-wrapper .l-main {
+  max-width: 1500px;
+  padding: 0 50px;
+}
+
+.p-hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10%;
+  padding: 0 50px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-hero__titleBox {
+  max-width: 1500px;
+  width: 100%;
+  padding: 100px 0;
+  border: solid 2px lightgray;
+  text-align: center;
+}
+.p-hero__title {
+  font-size: 50px;
+}
+
+.p-message__inner {
+  margin-top: 50px;
+}
+.p-message__container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-message__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 64px;
+  padding: 0 24px;
+  width: 100%;
+}
+.p-message__text {
+  line-height: 2;
+  margin-top: 24px;
+}
+.p-message__text :last-child {
+  margin-bottom: 24px;
+}
+.p-message__img {
+  padding: 0 24px;
+  width: 100%;
+}
+.p-message__signature {
+  margin-top: auto;
+}
+
+.p-recruit__inner {
+  margin-top: 150px;
+}
+.p-recruit__box {
+  margin-top: 50px;
+  padding: 25px;
+  border-top: solid 2px lightgray;
+  border-bottom: solid 2px lightgray;
+}
+.p-recruit__contents {
+  margin-top: 25px;
+}
+.p-recruit__contents:first-child {
+  margin-top: 0;
+}
+.p-recruit__contentsTitle {
+  position: relative;
+}
+.p-recruit__contentsTitle::before {
+  position: absolute;
+  left: -12px;
+  top: 3px;
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 15px;
+  background-color: #942F15;
+}
+.p-recruit__text {
+  margin-top: 5px;
+}
+
 .fadeUp {
   -webkit-animation-name: fadeUpAnime;
           animation-name: fadeUpAnime;
@@ -1397,6 +1504,11 @@ Object/Project/toppage
 /*================================================================================
 
 Object/Project/company
+
+================================================================================*/
+/*================================================================================
+
+Object/Project/recruit
 
 ================================================================================*/
 /*================================================================================

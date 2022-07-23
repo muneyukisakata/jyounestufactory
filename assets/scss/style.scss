@@ -51,6 +51,16 @@ Object/Project/company
 
 @use "Object/Project/company/company";
 
+/*================================================================================
+
+Object/Project/recruit
+
+================================================================================*/
+
+@use "Object/Project/recruit/main";
+@use "Object/Project/recruit/hero";
+@use "Object/Project/recruit/message";
+@use "Object/Project/recruit/recruit";
 
 /*================================================================================
 
