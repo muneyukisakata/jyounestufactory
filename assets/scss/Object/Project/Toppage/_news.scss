@@ -1,4 +1,4 @@
-@use "../../../Foundation/mixin";
+@use "../../../Foundation/mixin" as m;
 .p-news{
     &__inner{
         width: 100%;
@@ -11,22 +11,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: right;
+    }
+    &__listItem{
+        width: 100%;
+        padding: 10px 20px;
+        height: 300px;
+        overflow: hidden;
+        &:hover{
+            box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+            transform: translateY(-4px);
+            .p-news__img{
+                transform:scale(1.2,1.2);
+            }
+        }
     }
     &__link{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+        text-align: left;
+       
     }
     &__img{
-        width: 60%;
+        width: 100%;
+        max-width: 360px;
     }
     &__btn{
         padding-top: 100PX;
     }
     &__date{
         margin-top: 20px;
+        
     }
     &__text{
         margin-top: 20px;

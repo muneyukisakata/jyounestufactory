@@ -1,4 +1,4 @@
-@use "../../../Foundation/mixin";
+@use "../../../Foundation/mixin" as m;
 .p-service{
     .fadeUp{
         animation-delay: 1s;
@@ -10,8 +10,11 @@
         width: 100%;
         background-color: #F8F9F9;
     }
+    .c-mainTitle{
+        color: red;
+    }
     &__subtext{
-        color: mixin.$color-main;
+        color: m.$color-main;
     }
     &__titleBox{
         margin-bottom: 100px;
@@ -21,14 +24,14 @@
         
     }
     &__bgCW{
-        position:relative;/*テキストの基点となる位置を定義*/
-        height: 300px;
+        position:relative;
+        height: 301px;
         &::after{
             content: '';
             position: absolute;
             left: 0;
             bottom: 0;
-            border-bottom: solid 1px mixin.$color-gray;
+            border-bottom: solid 1px m.$color-gray;
             height: 5px;
             width: 100%;
             animation: border_anim 1s linear forwards;
@@ -69,10 +72,12 @@
         
     }
     &__mask{
-        position:relative;/*背景色の基点となる位置を定義*/
+        position:absolute;/*背景色の基点となる位置を定義*/
         display: block;
         overflow: hidden;/*拡大してはみ出る要素を隠す*/
         height: 100%;
+        width: 100%;
+        z-index: 1;
         &::before{
             content:"";
             position: absolute;
@@ -87,6 +92,11 @@
             opacity: 0;
             transform: translateX(40px);
             transition: .5s;
+            @include m.mq(sp) {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
         }
         
         &:hover::before{
@@ -107,6 +117,7 @@
     &__link{
         height: 100%;
         display: block;
+        position: relative;
         
     }
     &__container{
@@ -117,13 +128,35 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding: 0 20px;
+        @include m.mq(sp) {
+            color: #fff;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
     &__title{
-        font-size: 40px;
-        color: mixin.$color-main;
+        font-size: 32px;
+        color: m.$color-main;
+        @include m.mq(sp) {
+            font-size: 24px;
+            color: #fff;
+        }
     }
     &__box{
-        width: 400px;
+        position: relative;
+        z-index: 1000;
+        width: 30%;
+        @include m.mq(sp) {
+            width: auto;
+        }
+    }
+    &__text{
+        width: 70%;
+        @include m.mq(sp) {
+            color: #000;
+            
+        }
     }
 }
   

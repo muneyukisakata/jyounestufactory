@@ -1,41 +1,14 @@
-$breakpoint-pcWide: 1260px;
-$breakpoint-tab-landscape: 1024px;
-$breakpoint-tab: 768px;
-$breakpoint-sp: 480px;
-$breakpoint-sp-small: 320px;
+$breakpoint: (
+  sp: 'screen and (max-width: 396px)',
+  tab: 'screen and (max-width: 767px)',
+  pc: 'screen and (min-width: 768px)',
+);
 
-$gWidth: 1920px;
-
-@mixin max-screen($breakpoint-pcWide) {
-  @media screen and (max-width: $breakpoint-pcWide) {
-    @content;
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
   }
 }
-
-@mixin max-screen($breakpoint-tab-landscape) {
-  @media screen and (max-width: $breakpoint-tab-landscape) {
-    @content;
-  }
-}
-
-@mixin max-screen($breakpoint-tab) {
-  @media screen and (max-width: $breakpoint-tab) {
-    @content;
-  }
-}
-
-@mixin min-screen($breakpoint-sp) {
-  @media screen and (max-width: $breakpoint-sp) {
-    @content;
-  }
-}
-
-@mixin min-screen($breakpoint-sp-small) {
-  @media screen and (max-width: $breakpoint-sp-small) {
-    @content;
-  }
-}
-
 
 $color-main: #942F15;
 $color-gray:lightgray;

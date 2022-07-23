@@ -1,13 +1,14 @@
-@use "../../Foundation/mixin";
+@use "../../Foundation/mixin" as m;
 .c-mainTitle{
     font-size: 32px;
     text-align: center;
+    font-weight: 600;
 }
 .c-subTitle{
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
 }
 .c-subtext{
-    color: mixin.$color-main;
+    color: m.$color-main;
     text-align: center;
 }
