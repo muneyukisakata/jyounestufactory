@@ -14,11 +14,9 @@
         align-items: center;
         width: 100%;
         background-color: #fff;
-        @include m.mq(tab) {
-            display: none;
-        }
+        
     }
-    &__logo{
+    &__Logowrap{
         display: flex;
         justify-content: flex-start;
         width: 25%;
@@ -26,7 +24,7 @@
             width: 100%;
         }
     }
-    &__img{
+    &__logo{
         width: 10%;
     }
     &__link{
@@ -43,6 +41,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include m.mq(tab) {
+            display: none;
+        }
 
     }
     &__navList{

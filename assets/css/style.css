@@ -192,12 +192,7 @@ select {
   width: 100%;
   background-color: #fff;
 }
-@media screen and (max-width: 767px) {
-  .p-header__wrap {
-    display: none;
-  }
-}
-.p-header__logo {
+.p-header__Logowrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,11 +204,11 @@ select {
   width: 25%;
 }
 @media screen and (max-width: 767px) {
-  .p-header__logo {
+  .p-header__Logowrap {
     width: 100%;
   }
 }
-.p-header__img {
+.p-header__logo {
   width: 10%;
 }
 .p-header__link {
@@ -247,6 +242,11 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .p-header__nav {
+    display: none;
+  }
 }
 .p-header__navList {
   display: -webkit-box;
@@ -624,9 +624,6 @@ select {
   position: relative;
   width: 100%;
   background-color: #F8F9F9;
-}
-.p-service .c-mainTitle {
-  color: red;
 }
 .p-service__subtext {
   color: #942F15;
