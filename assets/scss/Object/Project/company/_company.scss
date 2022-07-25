@@ -2,14 +2,39 @@
 @use "../../../Foundation/mixin";
 .p-company {
   &__subTitle {
-    color: $color-main;
+    color: mixin.$color-main;
+    text-align: center;
   }
   &__title {
     font-weight: bold;
-
+    text-align: center;
+    font-size: 56px;
+  }
+  &__list {
+    padding: 100px;
   }
   &__listItem {
     display: flex;
-
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0px;
+    position: relative;
+  }
+  &__listItem::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 100px;
+    background-color: mixin.$color-gray;
+    position: absolute;
+  }
+  &__listTitle {
+    font-weight: bold;
+    width: 100px;
+    text-align: left;
+  }
+  &__listText {
+    text-align: left;
   }
 }
