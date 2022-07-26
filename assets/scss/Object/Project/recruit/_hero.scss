@@ -1,11 +1,5 @@
 @use "../../../Foundation/mixin" as m;
 .p-hero {
-    display: flex;
-    margin-top: 10%;
-    padding: 0 50px;
-    align-items: center;
-    justify-content: center;
-
     &__titleBox {
         max-width: 1500px;
         width: 100%;

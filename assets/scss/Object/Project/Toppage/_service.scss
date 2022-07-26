@@ -46,7 +46,7 @@
             .p-service__link{
                 .p-service__mask{
                     &::before{
-                        background-image: url(/assets/images/top/school.png);
+                        background-image: url("../../../../images/top/school.png");
                         background-size: cover;
                         background-position: 50%;
                         background-repeat: no-repeat;
@@ -58,7 +58,7 @@
             .p-service__link{
                 .p-service__mask{
                     &::before{
-                        background-image: url(/assets/images/top/consulting.png);
+                        background-image: url("../../../../images/top/contact-icon.png");
                         background-size: cover;
                         background-position: 50%;
                         background-repeat: no-repeat;
@@ -78,7 +78,7 @@
         &::before{
             content:"";
             position: absolute;
-            background-image: url(/assets/images/top/training.png);
+            background-image: url(../../../../images/top/training.png);
             background-size: cover;
             background-position: 50%;
             background-repeat: no-repeat;
